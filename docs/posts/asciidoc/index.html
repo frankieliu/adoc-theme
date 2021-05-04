@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    
+    <title>My New Hugo Site | Asciidoc</title>
+    
+</head>
+
+<body>
+    <div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+        <a class="nav-link" href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a>
+        
+        <a class="nav-link" href="/posts/">
+        
+        
+        <i data-feather="pen-tool"></i> 
+        
+        
+        Posts
+        </a>
+        
+        <a class="nav-link" href="/tags/">
+        
+        
+        <i data-feather="tag"></i> 
+        
+        
+        Tags
+        </a>
+        
+    </nav>
+</div>
+    
+    <div class="container">
+        <main id="main">
+            
+
+<h1>Asciidoc</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2020-09-06">Sep 6, 2020</time>
+<span id="social">
+    <i data-feather="share-2"></i></a>
+    <a href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fasciidoc%2f&text=Asciidoc&via="
+        class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on Twitter">
+        <i class="feather-16" data-feather="twitter"></i></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fasciidoc%2f&summary=Table%20of%20Contents%20mathjax%20ditaa%20plantuml%20syntax%20highlighting%20a2s%20vega%20vegalite%20mermaid%20bpmn%20nomnoml%20%20%20%20%20%20%20There%20are%20things%20to%20note%21%0a%20%20%20%20%20%20%20mathjax%20%5c%28E%20%3d%20mc%5e2%5c%29%0a%20%5c%5b%5cbegin%7bequation%7d%20x%5e2%20%2b%20y%5e2%20%3d%20z%5e2%20%5clabel%7beq%3asample%7d%20%5cend%7bequation%7d%5c%5d%20%20%20This%20is%20a%20reference%20to%20the%20equation%20above%20%5c%28%5ceqref%7beq%3asample%7d%5c%29.%0a%20%20%20ditaa%20%20%2b-------------%2b%20%7c%20Asciidoctor%20%7c-------%2b%20%7c%20diagram%20%7c%20%7c%20%2b-------------%2b%20%7c%20PNG%20out%20%5e%20%7c%20%7c%20ditaa%20in%20%7c%20%7c%20v%20%2b--------%2b%20%2b--------%2b----%2b%20%2f---------------%5c%20%7c%20%7c%20--%2b%20Asciidoctor%20%2b--%26gt%3b%20%7c%20%7c%20%7c%20Text%20%7c%20%2b-------------%2b%20%7c%20Beautiful%20%7c%20%7cDocument%7c%20%7c%20%21&source=Retrolog.io"
+        class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on LinkedIn">
+        <i class="feather-16" data-feather="linkedin"></i></a>
+</span>
+
+<br><br>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_mathjax">mathjax</a></li>
+<li><a href="#_ditaa">ditaa</a></li>
+<li><a href="#_plantuml">plantuml</a></li>
+<li><a href="#_syntax_highlighting">syntax highlighting</a></li>
+<li><a href="#_a2s">a2s</a></li>
+<li><a href="#_vega">vega</a></li>
+<li><a href="#_vegalite">vegalite</a></li>
+<li><a href="#_mermaid">mermaid</a></li>
+<li><a href="#_bpmn">bpmn</a></li>
+<li><a href="#_nomnoml">nomnoml</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There are things to note!</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mathjax">mathjax</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>\(E = mc^2\)</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+x^2 + y^2 = z^2
+\label{eq:sample}
+\end{equation}\]
+</div>
+</div>
+<div class="paragraph">
+<p>This is a reference to the equation above \(\eqref{eq:sample}\).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ditaa">ditaa</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>                   +-------------+
+                   | Asciidoctor |-------+
+                   |   diagram   |       |
+                   +-------------+       | PNG out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /---------------\
+ |        | --+ Asciidoctor +--&gt; |               |
+ |  Text  |   +-------------+    |   Beautiful   |
+ |Document|   |   !magic!   |    |    Output     |
+ |     {d}|   |             |    |               |
+ +---+----+   +-------------+    \---------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plantuml">plantuml</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>class BlockProcessor
+class DiagramBlock
+class DitaaBlock
+class PlantUmlBlock
+
+BlockProcessor &lt;|-- DiagramBlock
+DiagramBlock &lt;|-- DitaaBlock
+DiagramBlock &lt;|-- PlantUmlBlock</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syntax_highlighting">syntax highlighting</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">app.rb</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="ruby"><span></span><span class="tok-nb">require</span> <span class="tok-s1">&#39;sinatra&#39;</span>
+
+<span class="tok-n">get</span> <span class="tok-s1">&#39;/hi&#39;</span> <span class="tok-k">do</span>
+  <span class="tok-s2">&quot;Hello World!&quot;</span>
+<span class="tok-k">end</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="python"><span></span><span class="tok-k">def</span> <span class="tok-nf">hello</span><span class="tok-p">:</span>
+  <span class="tok-k">print</span><span class="tok-p">(</span><span class="tok-s2">&quot;hello&quot;</span><span class="tok-p">)</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="python"><span></span><span class="tok-k">def</span> <span class="tok-nf">hello</span><span class="tok-p">:</span>
+  <span class="tok-k">print</span><span class="tok-p">(</span><span class="tok-s2">&quot;hello&quot;</span><span class="tok-p">)</span>  <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>A little callout</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a2s">a2s</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre> .-------------------------.
+ |                         |
+ | .---.-. .-----. .-----. |
+ | | .-. | +--&gt;  | |  &lt;--+ |
+ | | '-' | |  &lt;--+ +--&gt;  | |
+ | '---'-' '-----' '-----' |
+ |  ascii     2      svg   |
+ |                         |
+ '-------------------------'
+
+https://github.com/asciitosvg
+
+[1,0]: {"fill":"#88d","a2s:delref":1}</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vega">vega</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>vega::data/treemap.json[alt="treemap for flare"]</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vegalite">vegalite</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {"url": "data/movies.json"},
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "bin": {"maxbins": 10},
+      "field": "IMDB Rating"
+    },
+    "y": {
+      "bin": {"maxbins": 10},
+      "field": "Rotten Tomatoes Rating"
+    },
+    "size": {"aggregate": "count"}
+  }
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mermaid">mermaid</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bpmn">bpmn</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>bpmn::data/diagram.bpmn[format=svg,target="diagram",alt="bpmn diagram",width=300,height=200]</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nomnoml">nomnoml</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>[Pirate|eyeCount: Int|raid();pillage()|
+  [beard]--[parrot]
+  [beard]-:&gt;[foul mouth]
+]
+
+[&lt;table&gt;mischief | bawl | sing || yell | drink]
+
+[&lt;abstract&gt;Marauder]&lt;:--[Pirate]
+[Pirate]- 0..7[mischief]
+[jollyness]-&gt;[Pirate]
+[jollyness]-&gt;[rum]
+[jollyness]-&gt;[singing]
+[Pirate]-&gt; *[rum|tastiness: Int|swig()]
+[Pirate]-&gt;[singing]
+[singing]&lt;-&gt;[rum]
+
+[&lt;start&gt;st]-&gt;[&lt;state&gt;plunder]
+[plunder]-&gt;[&lt;choice&gt;more loot]
+[more loot]-&gt;[st]
+[more loot] no -&gt;[&lt;end&gt;e]
+
+[&lt;actor&gt;Sailor] - [&lt;usecase&gt;shiver me;timbers]</pre>
+</div>
+</div>
+</div>
+</div>
+
+<p class="footer text-center">Copyright (c) 2020 </p>
+
+
+        </main>
+    </div>
+    <script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+</body>
+
+</html>
